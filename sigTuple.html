@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>SigTuple</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./SigTuple.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body class="skin" ng-app="app">
+    <div id="dvContent" ng-controller="sigTupleController" style="height:95%" ng-cloak>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" style="margin-left: 50px;">SIG<span style="font-size: 24px;">{(.)}</span>TUPLE</a>
+        </div>
+        <div class="container-fluid">
+            <div id="dvType" class="row">
+                <div id="inputForm" class="col-sm-5">
+                    <form id="form" class="form-card">
+                        <h1 class="form-title no-border"> INPUT </h1>
+                        <br/>
+
+                        <div class="form-group">
+                            <label class="control-label inputsm">X Coordinate:</label>
+                            <input type="number" id="xCoordinate" class="form-control input-sm" name="X Coordinate" min="0" step="1" placeholder="Enter X Coordinate" ng-model="xCoordinate" ng-change="xChange()">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label inputsm">Y Coordinate:</label>
+                            <input type="number" id="yCoordinate" class="form-control input-sm" name="Y Coordinate" min="0" step="1" placeholder="Enter Y Coordinate" ng-model="yCoordinate" ng-change="yChange()">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label inputsm">Width:</label>
+                            <input type="number" id="width" class="form-control input-sm" name="Width" min="0" step="1" placeholder="Enter Width" ng-model="width" ng-change="widthChange()">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label inputsm">Height:</label>
+                            <input type="number" id="height" class="form-control input-sm" name="Height" min="0" step="1" placeholder="Enter Height" ng-model="height" ng-change="heightChange()">
+                        </div>
+                    </form>
+                </div>
+                <div id="preview" class="col-sm-5">
+                    <div class="form-card">
+                        <h1 class="form-title no-border"> PREVIEW </h1>
+                        <br/>
+                        <div id="boxContainer">
+                            <div id="outerBox">
+                                <div id=innerBox>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><div style="width: 100%; height: auto ; background-color: grey ; text-align: center;">Copyright©2020 Paurush</text-align></footer>
+
+    <script src="./sigTuple.js"></script>
+</body>
+</html>

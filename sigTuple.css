@@ -1,0 +1,65 @@
+.skin {
+    background: #f6f6f6;
+}
+.form-card {
+    border: 1px solid #eaeaea;
+    border-bottom-width: 2px;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.form-title {
+    border-bottom: 1px solid #DDD;
+    padding: 5px 0 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-title.no-border {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#dvType {
+    margin: 2em 4em 5em;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: orangered;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#boxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outerBox {
+    position: relative;
+    border: 1px solid lightgrey;
+}
+
+#innerBox {
+    position: absolute;
+    border: 1px solid black;
+}
